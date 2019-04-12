@@ -1,0 +1,17 @@
+<div class="calculator-fit">
+  <div *ngIf="errorExpression" class="error">
+    <p>L'expression est incorrecte !</p>
+  </div>
+  <mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile colspan="2">
+      <input type="text" class="fit input-calc" [(ngModel)]="inputCalc" readonly />
+    </mat-grid-tile>
+    <mat-grid-tile *ngFor="let touche of touches"
+      [colspan]="touche.cols || 1"
+      [rowspan]="touche.rows || 1">
+      <button mat-stroked-button color="primary" *ngIf="touche.name" class="fit touche"
+        [ngClass]="{'operator-calc': touche.operator || false}"
+        (click)="onButtonClicked(touche.name)" [disabled]="calculating">{{ touche.name }}</button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

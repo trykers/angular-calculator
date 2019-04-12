@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+$eva-icons-font-path: '~eva-icons/style/fonts';
+@import "~eva-icons/style/scss/eva-icons.scss";
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/Nunito-Regular.eot');
+  src: url('./assets/fonts/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Nunito-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Nunito-Regular.woff') format('woff'),
+      url('./assets/fonts/Nunito-Regular.ttf') format('truetype'),
+      url('./assets/fonts/Nunito-Regular.svg#Nunito-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/fonts/Nunito-Light.eot');
+  src: url('./assets/fonts/Nunito-Light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Nunito-Light.woff2') format('woff2'),
+      url('./assets/fonts/Nunito-Light.woff') format('woff'),
+      url('./assets/fonts/Nunito-Light.ttf') format('truetype'),
+      url('./assets/fonts/Nunito-Light.svg#Nunito-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Nunito', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}

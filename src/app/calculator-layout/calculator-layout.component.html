@@ -1,0 +1,14 @@
+<div class="fit-flex calculator-layout">
+  <h2 class="mat-title text-center">Calculator v1.0 by Kevin ROBERTI</h2>
+  <mat-grid-list cols="8" class="fit" rowHeight="fit">
+    <mat-grid-tile colspan="3" class="fit">
+      <app-calculator-history class="fit"></app-calculator-history>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" class="fit">
+      <mat-divider [vertical]="true" style="height:100%;"></mat-divider>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="4">
+      <app-calculator style="width:100%;height:100%;"></app-calculator>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,45 @@
+* {
+    font-family: 'Nunito', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.fit {
+    width: 100%;
+    height: 100%;
+}
+
+.calculator-fit {
+    height: 700px;
+}
+
+.touche {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.input-calc {
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: right;
+    max-width: 415px;
+    max-height: 95px;
+    border: 1.5px solid rgba(0,0,0,.12);
+    border-radius: 4px;
+}
+
+.operator-calc {
+    color: orange;
+}
+
+.error {
+    width: 600px;
+    background-color: #ff8888;
+    color: #bb3333;
+    border: 1px solid #993333;
+    border-radius: 3px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.error p {
+    padding: 20px;
+}

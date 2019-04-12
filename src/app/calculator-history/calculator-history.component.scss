@@ -1,0 +1,68 @@
+$eva-icons-font-path: '~eva-icons/style/fonts';
+@import "~eva-icons/style/scss/eva-icons.scss";
+@import "../../variables";
+
+* {
+    font-family: 'Nunito', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.fit {
+    width: 100%;
+}
+
+mat-list-item {
+    background-color: #f6f6f6;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+mat-list-item:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+mat-list-item p {
+    padding: 5px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.history-delete-icon {
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top:-2px;
+    color: $warn;
+}
+
+.history-delete-icon:hover {
+    color: $warn-light;
+    cursor: pointer;
+}
+
+.history-calcul {
+    color: gray;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+.history-egual {
+    color: gray;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.history-result {
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.history-header {
+    margin-left: auto;
+    margin-right: auto;
+}

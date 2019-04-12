@@ -1,0 +1,16 @@
+<mat-list class="fit">
+    <h3 mat-subheader>
+        <button mat-flat-button color="accent"
+        class="history-header"
+        [disabled]="history.length === 0"
+        (click)="clearHistory()">Supprimer l'historique</button>
+    </h3>
+  <mat-list-item *ngFor="let result of history, let i = index" class="fit" (click)="onResultClicked(result)">
+    <p>
+        <span class="history-calcul">{{result.calcul}}</span>
+        <span class="history-egual"> = </span>
+        <span class="history-result">{{result.result}}</span>
+        <i class="eva eva-trash-2-outline history-delete-icon" color="warn" (click)="deleteResult(i)"></i>
+    </p>
+  </mat-list-item>
+</mat-list>
